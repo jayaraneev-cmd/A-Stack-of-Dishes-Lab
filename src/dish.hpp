@@ -1,15 +1,21 @@
+#ifndef DISH_HPP
+#define DISH_HPP
+
 #include <string>
+using namespace std;
 
 class Dish {
-  private:
-    std::string description;
+private:
+    string description;
 
-  public:
-    Dish(std::string description) {
-      this->description = description;
+public:
+    Dish(string description) {
+        this->description = description;
     }
 
-    std::string get_description() {
-      return this->description;
+    string get_description() {
+        return this->description;
     }
-}
+};
+
+#endif
